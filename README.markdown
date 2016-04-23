@@ -1,9 +1,9 @@
 ## r.vim
 **r.vim** Run R tests in vim, without leaving vim. Soon, other things?
 
-<Leader>t will run tests for the particular file you are in.
+`<Leader>tt` will run tests for the particular file you are in.
 
-<Leader>T will run all tests for your R package.
+`<Leader>TT` will run all tests for your R package.
 
 
 ## Installation
