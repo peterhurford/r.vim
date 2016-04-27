@@ -8,6 +8,9 @@ nnoremap <Leader>TT :call RunAllTest()<CR>
 
 function! RunFileTest()
   let file_name = expand('%:r')
+  if file_name =~ "tests"
+    let file_name = split(expand('%:t:r'), '-')[1]
+  endif
   call RunTest("'.', '" . file_name . "'")<CR>
 endfunction
 
