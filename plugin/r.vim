@@ -21,6 +21,6 @@ endfunction
 function! RunTest(args)
   let args = a:args
   let command = "! Rscript -e \"library(methods); library(devtools); test(" . args . ")\""
-  echo "Running tests... Please wait..."
+  echo "Running tests: " . args . " ... Please wait..."
   echo system(command)
 endfunction
