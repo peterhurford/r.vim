@@ -8,13 +8,11 @@ nnoremap <Leader>TT :call RunAllTest()<CR>
 
 function! RunFileTest()
   let file_name = expand('%:r')
-  "echo "'.', '" . file_name . "'"
   call RunTest("'.', '" . file_name . "'")<CR>
 endfunction
 
 function! RunAllTest()
   let pkg_dir = expand("%:p:h:h")
-  "echo "'" . pkg_dir . "'"
   call RunTest("'" . pkg_dir . "'")<CR>
 endfunction
 
